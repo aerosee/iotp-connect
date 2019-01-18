@@ -1,0 +1,29 @@
+{
+  "name": "@aerosee/iotp-connect",
+  "version": "1.0.0",
+  "description": "Connect to IBM IoT Platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=6.10.1",
+    "npm": ">=5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aerosee/iotp-connect.git"
+  },
+  "author": "Horia Alungulesei",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aerosee/iotp-connect/issues"
+  },
+  "homepage": "https://github.com/aerosee/iotp-connect#readme",
+  "dependencies": {
+    "ibmiotf": "~0.2.41",
+    "node-dht-sensor": "~0.0.34"
+  },
+  "private": true
+}

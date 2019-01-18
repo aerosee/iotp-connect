@@ -1,2 +1,2 @@
 # iotp-connect
-Connect to IBM IoT Platform
+Connect to IBM IoT Platform.
