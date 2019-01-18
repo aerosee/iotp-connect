@@ -1,6 +1,6 @@
 const iotClient = require("ibmiotf");
 const dhtSensor = require('node-dht-sensor');
-const config = require('/config');
+const config = require('./config');
 
 const interval = 5000; // milliseconds
 
