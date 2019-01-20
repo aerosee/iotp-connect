@@ -1,7 +1,12 @@
 {
-  "org" : "",
-  "id" : "",
-  "type" : "",
-  "auth-method" : "",
-  "auth-token" : ""
+  "iot": {
+    "org": "",
+    "id": "",
+    "type": "",
+    "auth-method": "token",
+    "auth-token": ""
+  },
+  "sensor": 22,
+  "gpio": 4,
+  "qos": 2
 }
