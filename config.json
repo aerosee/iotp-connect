@@ -8,5 +8,6 @@
   },
   "sensor": 22,
   "gpio": 4,
-  "qos": 2
+  "qos": 2,
+  "interval": 10000
 }
