@@ -1,12 +1,23 @@
 {
   "name": "@aerosee/iotp-connect",
-  "version": "1.0.0",
-  "description": "Connect to IBM IoT Platform.",
+  "version": "1.0.1",
+  "description": "Node.js application that connects the DHT22 temperature and humidity sensor to the IBM IoT Platform, using Raspberry Pi.",
+  "keywords": [
+    "nodejs",
+    "dht22",
+    "temperature",
+    "humidity",
+    "ibm",
+    "iot",
+    "raspberrypi"
+  ],
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "os": [ "linux" ],
+  "os": [
+    "linux"
+  ],
   "engines": {
     "node": ">=6.10.1",
     "npm": ">=5.1.0"
@@ -23,7 +34,7 @@
   "homepage": "https://github.com/aerosee/iotp-connect#readme",
   "dependencies": {
     "ibmiotf": "~0.2.41",
-    "node-dht-sensor": "~0.0.34"
+    "node-dht-sensor": "~0.3.0"
   },
   "private": true
 }
