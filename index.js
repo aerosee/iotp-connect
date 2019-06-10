@@ -18,8 +18,9 @@ const logger = createLogger({
 
 deviceClient.connect();
 
-deviceClient.on('connect', function () {
-  setInterval(function () {
+deviceClient.on('connect', () => {
+  logger.info('Connected to the IBM IoT platform');
+  setInterval(() => {
     dhtSensor.read(config.sensor, config.gpio).then(
       res => {
         const data = {
@@ -29,12 +30,8 @@ deviceClient.on('connect', function () {
         deviceClient.publish('data', 'json', data, config.qos);
         logger.info(data);
       },
-      err => {
-        logger.error('Sensor read error', err);
-      })
+      err => logger.error('Error reading sensor data', err));
   }, config.interval);
 });
 
-deviceClient.on('error', function (err) {
-  logger.error('IoT error', err);
-});
+deviceClient.on('error', err => logger.error('Error connecting to the IBM IoT platform', err));
