@@ -9,17 +9,18 @@
     "humidity",
     "ibm",
     "iot",
-    "raspberrypi"
+    "raspberry",
+    "pi"
   ],
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "./node_modules/.bin/babel-node index.js"
   },
   "os": [
     "linux"
   ],
   "engines": {
-    "node": "^8",
+    "node": "^10",
     "npm": "^6"
   },
   "repository": {
@@ -32,10 +33,15 @@
     "url": "https://github.com/aerosee/iotp-connect/issues"
   },
   "homepage": "https://github.com/aerosee/iotp-connect#readme",
+  "private": true,
   "dependencies": {
-    "ibmiotf": "~0.2.41",
-    "node-dht-sensor": "~0.3.0",
+    "@wiotp/sdk": "~0.6.2",
+    "node-dht-sensor": "~0.4.1",
     "winston": "~3.2.1"
   },
-  "private": true
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0"
+  }
 }
